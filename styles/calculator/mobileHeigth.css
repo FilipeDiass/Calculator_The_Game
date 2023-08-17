@@ -1,0 +1,346 @@
+@charset "UTF-8";
+@media screen and (min-width: 375px) and (min-height: 750px){
+
+    :root{    
+        --widthCalc: 100px;
+        --heigthCalc: 210px;
+        --width: 100px;
+        --heigth: 90px;
+    }
+
+    /*Calculator container*/
+    #container_calc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: initial;
+        width: calc(240px + var(--widthCalc));
+        height: calc(425px + var(--heigthCalc));
+        padding: 15px;
+    }
+    /*Screen*/
+    #border_screen{
+        width: calc(216px + var(--width));
+        height: calc(170px + var(--heigth) + 25px );
+    }
+    #lvl{
+        width: calc(193px + var(--width));
+        height: 40px;
+        font-size: 1.5em;
+    }
+    #lvl span{
+        width: 80px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 3px;
+        background-color: #643933;
+        box-shadow:inset 0px 4px 1px 0px rgba(78, 40, 37, 40%);
+    }
+
+    #screen{
+        width: calc(188px + var(--width));
+        height: calc(116px + var(--heigth));
+        border-top: 6px solid var(--calc16);
+    }
+    #top_screen{
+        width: 100%;
+        height: 45px;
+        padding: 3px 7px 0px 7px;
+    }
+    #emote{
+        width: 73px;
+        height: 43px;
+        border: 3px solid var(--calc3);
+        border-radius: 10px;
+    }
+    .goal_move{
+        width: 93px;
+        height: 43px;
+        color: white;
+        font-size: 0.8em;
+        border-radius: 2px;
+    }
+    #text_screen{
+        width: calc(179px + var(--width));
+        height: calc(40px + var(--heigth));
+        padding: 0px 10px;
+        margin-top: 9px;
+    }
+    p#txt_back{
+        font-size: 70px;
+    }
+    p#txt_front{
+        font-size: 70px;
+        text-shadow: 1.5px 1.5px 2px rgba(69, 74, 78, 50%);
+    }
+    /*Screen*/
+
+    /*Buttons*/
+    #container_buttom{
+        width: 100%;
+        height: calc(174px + var(--heigth));
+    }
+    #group1{
+        margin-top: 12px;
+    }
+    div.group_buttom{
+        width: 100%;
+        height: 79.5px;
+        margin-top: 5px;
+    }
+    div.group_buttom span{
+        width: 100px;
+        height: 70px;
+        margin-top: 8px;
+        box-shadow: 0px 3px 0px #D8D3C6, 0px -3px 0px #D8D3C6;
+    }
+    .buttom{
+        width: 100px;
+        height: 71px;
+        top: -7px;
+    }
+    .buttom:active{
+        box-shadow: 0px 0px 0px var(--calc8) !important;
+        top: -1px !important;
+        transition: 110ms;
+    }
+    .emote{
+        fill: var(--calc3);
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 600px) and (min-height: 270px) and (max-height: 349px){
+
+    .container_window{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    /*Calculator container*/
+    #container_calc{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 585px;
+        height: 235px;
+        padding: 15px;
+    }
+    /*Screen*/
+    #border_screen{
+        width: 270px;
+        height: 100%;
+    
+    }
+    #lvl{
+        width: 240px;
+        height: 31px;
+        font-size: 1.3em;
+    }
+    #lvl span{
+        width: 73px;
+        height: 24px;
+        border: 1px solid black;
+        border-radius: 3px;
+        background-color: #643933;
+        box-shadow:inset 0px 4px 1px 0px rgba(78, 40, 37, 40%);
+    }
+
+    #screen{
+        width: 240px;
+        height: 145px;
+        border-top: 6px solid var(--calc16);
+    }
+    #top_screen{
+        width: 100%;
+        height: 35px;
+        padding: 3px 7px 0px 7px;
+    }
+    #emote{
+        width: 60px;
+        height: 32px;
+        border: 3px solid var(--calc3);
+        border-radius: 10px;
+    }
+    .goal_move{
+        width: 77px;
+        height: 32px;
+        color: white;
+        font-size: 0.7em;
+        border-radius: 2px;
+    }
+    #text_screen{
+        width: calc(179px + var(--width));
+        height: calc(40px + var(--heigth));
+        padding: 0px 15px;
+        margin-top: 9px;
+    }
+    p#txt_back{
+        font-size: 60px;
+    }
+    p#txt_front{
+        font-size: 60px;
+        text-shadow: 1.5px 1.5px 2px rgba(69, 74, 78, 50%);
+    }
+    /*Screen*/
+
+    /*Buttons*/
+    #container_buttom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 49%;
+        height: 100%;
+    }
+    #group1{
+        margin-top: 8px;
+    }
+    div.group_buttom{
+        width: 100%;
+        height: 80px;
+        margin-top: 5px;
+    }
+    div.group_buttom span{
+        width: 87px;
+        height: 52px;
+        margin-top: 3px;
+        box-shadow: 0px 3px 0px #D8D3C6, 0px -3px 0px #D8D3C6;
+    }
+    .buttom{
+        width: 87px;
+        height: 53px;
+        top: -7px;
+    }
+    .buttom:active{
+        box-shadow: 0px 0px 0px var(--calc8) !important;
+        top: -1px !important;
+        transition: 110ms;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (min-height: 350px) and (max-height: 580px){
+
+    :root{    
+        --width: 40px;
+        --heigth: 40px;
+    }
+
+    .container_window{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    /*Calculator container*/
+    #container_calc{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 585px;
+        height: 270px;
+        padding: 15px;
+    }
+    /*Screen*/
+    #border_screen{
+        width: 270px;
+        height: 100%;
+    
+    }
+    #lvl{
+        width: 240px;
+        height: 35px;
+        font-size: 1.5em;
+    }
+    #lvl span{
+        width: 80px;
+        height: 28px;
+        border: 1px solid black;
+        border-radius: 3px;
+        background-color: #643933;
+        box-shadow:inset 0px 4px 1px 0px rgba(78, 40, 37, 40%);
+    }
+
+    #screen{
+        width: calc(200px + var(--width));
+        height: calc(130px + var(--heigth));
+        border-top: 6px solid var(--calc16);
+    }
+    #top_screen{
+        width: 100%;
+        height: 35px;
+        padding: 3px 7px 0px 7px;
+    }
+    #emote{
+        width: 60px;
+        height: 32px;
+        border: 3px solid var(--calc3);
+        border-radius: 10px;
+    }
+    .goal_move{
+        width: 77px;
+        height: 32px;
+        color: white;
+        font-size: 0.7em;
+        border-radius: 2px;
+    }
+    #text_screen{
+        width: calc(179px + var(--width));
+        height: calc(40px + var(--heigth));
+        padding: 0px 4px;
+        margin-top: 20px;
+    }
+    p#txt_back{
+        font-size: 60px;
+    }
+    p#txt_front{
+        font-size: 60px;
+        text-shadow: 1.5px 1.5px 2px rgba(69, 74, 78, 50%);
+    }
+    /*Screen*/
+
+    /*Buttons*/
+    #container_buttom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 48%;
+        height: 100%;
+    }
+    #group1{
+        margin-top: 8px;
+    }
+    div.group_buttom{
+        width: 100%;
+        height: 80px;
+        margin-top: 5px;
+    }
+    div.group_buttom span{
+        width: 85px;
+        height: 64px;
+        margin-top: 3px;
+        box-shadow: 0px 3px 0px #D8D3C6, 0px -3px 0px #D8D3C6;
+    }
+    .buttom{
+        width: 85px;
+        height: 65px;
+        top: -7px;
+    }
+    .customButton .buttom:active{
+        box-shadow: 0px 0px 0px var(--calc8) !important;
+        top: 0px !important;
+        transition: 110ms;
+    }
+    .buttom:active{
+        box-shadow: 0px 0px 0px var(--calc8) !important;
+        top: -1px !important;
+        transition: 110ms;
+    }
+
+}

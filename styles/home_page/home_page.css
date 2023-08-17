@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'texto';
+    src:url(../../fonts/Gotham/Gotham-Medium.otf);
+}
+@font-face {
+    font-family: 'game';
+    src:url(../../fonts/gameplay/Gameplay.ttf);
+}
+@font-face {
+    font-family: 'player';
+    src:url(../../fonts/players/Players.ttf);
+}
+@font-face {
+    font-family: 'bebas';
+    src:url(../../fonts/Bebas_nueue/BebasNeue-Regular.otf);
+}
+
+:root{
+    /*Cores do Site*/ 
+    --cor1: #68A694;
+    --cor2: #ABBF80;
+    --cor3: #F2D091;
+    --cor4: #F2B885;
+    --cor5: #BF613F;
+    /*Cores do Site*/
+
+    /*Fontes*/
+    --fontTxt: 'texto', Arial, Helvetica, sans-serif;
+    --fontGame: 'game', Arial, Helvetica, sans-serif;
+    --fontPlayer: 'Player', Arial, Helvetica, sans-serif;
+    --fontBebas: 'bebas', Arial, Helvetica, sans-serif;
+    /*Fontes*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontTxt);
+}
+
+body,html{
+    width: 100%;
+    height: calc(100vh - 150px);
+    background-color: var(--cor3);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor3);
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 100%;
+}
+
+div#calulatorTxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 170px;
+    margin-bottom: 10px;
+}
+div#calulatorTxt p{
+    font-family: var(--fontBebas);
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 500;
+    line-height: 50px;
+}
+div#calulatorTxt button{
+    width: 190px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--cor5);
+    font-family: var(--fontPlayer);
+    font-size: 1.5em;
+    color: white;
+}
+
+div#imgCalculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 170px;
+    position: relative;
+}
+div#imgCalculator img{
+    width: 200px;
+    height: 200px;
+}
+div#imgCalculator p{
+    position: absolute;
+    color: #454A4E;
+    bottom: -15px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: var(--cor1);
+}
+div#copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 35px;
+    padding-bottom: 5px;
+}
+div#copyright p{
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+}
+
+div#social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+}
+span.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    padding: 0px 5px;
+}
+span.redes svg{
+    height: 30px;
+    fill: white;
+}

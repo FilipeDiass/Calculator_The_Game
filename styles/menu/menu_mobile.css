@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'texto';
+    src:url(../../fonts/Gotham/Gotham-Medium.otf);
+}
+@font-face {
+    font-family: 'game';
+    src:url(../../fonts/gameplay/Gameplay.ttf);
+}
+@font-face {
+    font-family: 'player';
+    src:url(../../fonts/players/Players.ttf);
+}
+@font-face {
+    font-family: 'calculator';
+    src:url(../../fonts/calculator/Calculator.ttf);
+}
+
+:root{
+    /*Cores do Site*/ 
+    --cor1: #68A694;
+    --cor2: #ABBF80;
+    --cor3: #F2D091;
+    --cor4: #F2B885;
+    --cor5: #BF613F;
+    /*Cores do Site*/ 
+
+    /*Fontes*/
+    --fontTxt: 'texto', Arial, Helvetica, sans-serif;
+    --fontGame: 'game', Arial, Helvetica, sans-serif;
+    --fontPlayer: 'Player', Arial, Helvetica, sans-serif;
+    --calculator: 'calculator', Arial, Helvetica, sans-serif;
+    /*Fontes*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontTxt);
+}
+
+/*Configuração*padrão dos links*/
+a{
+    color: white;
+    text-decoration: none;
+}
+/*Configuração*padrão dos links*/
+
+/*Header*/
+header{
+    width: 100%;
+    height: 70px;
+    background-color: var(--cor1);
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(50% + 57.5px);
+    height: 100%;
+    float: right;
+}
+#jogar{
+    width: 115px;
+    height: 40px;
+    background-color: #BF613F;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 20%);
+    cursor: pointer;
+}
+#jogar a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 115px;
+    height: 40px;
+    font-size: 1.3em;
+    font-family: var(--fontGame);
+    color: white;
+    letter-spacing: 1.5px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 40%);
+}
+
+/*Menu NavBar*/
+#menu_burgue{
+    width: 33px;
+    height: 27px;
+    margin-right: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-top: 4px solid;
+    cursor: pointer;
+}
+#menu_burgue::after, #menu_burgue::before{
+    content: '';
+    display: block;
+    position: relative;
+    width: 33px;
+    height: 4px;
+    background: currentColor;
+    margin-top: 7px;
+    transition: .3s;
+}
+nav.ativo #menu_burgue{
+    border-top: transparent;
+}
+nav.ativo #menu_burgue::after{
+    transform: rotate(136deg);
+    top: -0.8em;
+}
+nav.ativo #menu_burgue::before{
+    transform: rotate(-136deg);
+}
+
+#logoDesktop{
+    display: none !important;
+}
+#menu_nav{
+    display: block;
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    top: 69px;
+    left: 0;
+    list-style: none;
+    transition: 0.4s;
+    visibility: hidden;
+    overflow-y: hidden;
+    background-color: #68A694;  
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 20%); 
+    z-index: 100;
+}
+nav.ativo #menu_nav{
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+}
+#menu_nav li{
+    width: 100%;
+    padding: 10px 10px ;
+    height: 70px;
+}
+#menu_nav li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    padding-left: 10px;
+    border-bottom: 1px solid #8de5cc;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    font-family: var(--fontGame);
+}
+#menu_nav li a:hover{
+    background-color: #abbf8063;
+    transition: 0.4s;
+}
+/*Menu NavBar*/
+/*Header*/

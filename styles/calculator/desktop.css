@@ -1,0 +1,109 @@
+@media screen and (min-width: 950px) and (min-height: 670px){
+
+    :root{    
+        --widthCalc: 80px;
+        --heigthCalc: 150px;
+        --width: 70px;
+        --heigth: 60px;
+    }
+
+    /*Calculator container*/
+    #container_calc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: initial;
+        width: calc(240px + var(--widthCalc));
+        height: calc(425px + var(--heigthCalc));
+        padding: 15px;
+    }
+    /*Screen*/
+    #border_screen{
+        width: calc(216px + var(--width));
+        height: calc(170px + var(--heigth) + 17.5px );
+    }
+    #lvl{
+        width: calc(193px + var(--width));
+        height: 35px;
+        font-size: 1.3em;
+    }
+    #lvl span{
+        width: 70px;
+        height: 24px;
+        border: 1px solid black;
+        border-radius: 3px;
+        background-color: #643933;
+        box-shadow:inset 0px 4px 1px 0px rgba(78, 40, 37, 40%);
+    }
+
+    #screen{
+        width: calc(193px + var(--width));
+        height: calc(116px + var(--heigth));
+        border-top: 6px solid var(--calc16);
+    }
+    #top_screen{
+        width: 100%;
+        height: 40px;
+        padding: 3px 7px 0px 7px;
+    }
+    #emote{
+        width: 65px;
+        height: 37px;
+        border: 3px solid var(--calc3);
+        border-radius: 10px;
+    }
+    .goal_move{
+        width: 80px;
+        height: 37px;
+        color: white;
+        font-size: 0.7em;
+        border-radius: 2px;
+    }
+    #text_screen{
+        width: calc(179px + var(--width));
+        height: calc(40px + var(--heigth));
+        padding: 0px 7px;
+        margin-top: 9px;
+    }
+    p#txt_back{
+        font-size: 65px;
+    }
+    p#txt_front{
+        font-size: 65px;
+        text-shadow: 1.5px 1.5px 2px rgba(69, 74, 78, 50%);
+    }
+    /*Screen*/
+
+    /*Buttons*/
+    #container_buttom{
+        width: 100%;
+        height: calc(174px + var(--heigth));
+    }
+    #group1{
+        margin-top: 12px;
+    }
+    div.group_buttom{
+        width: 100%;
+        height: 72px;
+        margin-top: 5px;
+    }
+    div.group_buttom span{
+        width: 92px;
+        height: 63px;
+        box-shadow: 0px 3px 0px #D8D3C6, 0px -3px 0px #D8D3C6;
+    }
+    .buttom{
+        width: 92px;
+        height: 64px;
+        top: -7.2px;
+    }
+    .buttom:active{
+        box-shadow: 0px 0px 0px var(--calc8) !important;
+        top: -1px !important;
+        transition: 110ms;
+    }
+    .emote{
+        fill: var(--calc3);
+        height: 35px;
+    }
+}

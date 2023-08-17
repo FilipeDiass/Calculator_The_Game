@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+:root{
+    /*Cores da Calculadora*/
+    --calc1: #EBDDD2;
+    --calc2: #B6B0A2;
+    --calc3: #454A4E;
+    --calc4: #31383E;
+    --calc5: #FF8019;
+    --calc6: #B44900;
+    --calc7: #C52D2C;
+    --calc8: #922423;
+    --calc9: #8A7BD8;
+    --calc10: #473A89;
+    --calc11: #24A19D;
+    --calc12: #1A7673;
+    --calc13: #E1BB1C;
+    --calc14: #AE6F22;
+    --calc15: #A1BAA4;
+    --calc16: #87A28A;
+    --calc17: #48ac30;
+    --calc18: #3a8027;
+    /*Cores da Calculadora*/   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontTxt);
+}
+
+body,html{
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: var(--cor2);
+}
+
+/*Configuração*padrão dos links*/
+a{
+    color: white;
+    text-decoration: none;
+}
+/*Configuração*padrão dos links*/
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*Calculator container*/
+.container_window{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+#container_calc{
+    width: 270px;
+    height: 495px;
+    padding: 12px;
+    background-color: var(--calc1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 30%);
+}
+/*Screen*/
+#border_screen{
+    width: 246px;
+    height: 210px;
+    border-radius: 15px;
+    background-color: var(--calc3);
+}
+#lvl{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 223px;
+    height: 27px;
+    margin: auto;
+    padding: 0px 17px;
+    color: white;
+    font-size: 1.1em;
+    user-select: none;
+}
+#lvl span{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #643933;
+    box-shadow:inset 0px 4px 1px 0px rgba(78, 40, 37, 40%);
+}
+#lvl span .line{
+    width: 0px;
+    height: 100%;
+    border: 1px solid #6E453F;
+}
+#screen{
+    width: 223px;
+    height: 156px;
+    margin: auto;
+    border-radius: 10px;
+    border-top: 4px solid var(--calc16);
+    background-color: var(--calc15);
+}
+#top_screen{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 33px;
+    padding: 3px 7px 0px 7px;
+}
+#emote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 30px;
+    border: 3px solid var(--calc3);
+    border-radius: 8px;
+}
+.goal_move{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 30px;
+    color: white;
+    font-size: 0.7em;
+    border-radius: 2px;
+    background-color: var(--calc3);
+    user-select: none;
+}
+#text_screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 209px;
+    height: 80px;
+    padding: 0px 6px;
+    margin: auto;
+    margin-top: 16px;
+    position: relative;
+}
+p#txt_back{
+    position: absolute;
+    color: rgba(69, 74, 78, 0%);
+    font-size: 55px;
+    font-style: italic;
+    font-family: var(--calculator);
+    user-select: none;
+}
+p#txt_front{
+    color: rgba(69, 74, 78);
+    font-style: italic;
+    font-size: 55px;
+    font-family: var(--calculator);
+    text-shadow: 1.5px 1.5px 2px rgba(69, 74, 78, 50%);
+    user-select: none;
+}
+/*Screen*/
+
+/*Buttons*/
+#container_buttom{
+    width: 245px;
+    height: 204px;
+}
+#group1{
+    margin-top: 12px;
+}
+div.group_buttom{
+    display: flex;
+    justify-content: space-between;
+    width: 245px;
+    height: 68px;
+    position: relative;
+    margin-top: 5px;
+}
+div.group_buttom span{
+    display: block;
+    width: 80px;
+    height: 57px;
+    margin-top: 8px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px #D8D3C6, 0px -3px 0px #D8D3C6;
+    background-color: var(--calc2);
+}
+.buttom{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 58px;
+    position: relative;
+    top: -7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+    user-select: none;
+
+}
+.customButton {
+    box-shadow: 0px 0px 0px var(--calc8) !important;
+    top: 0px !important;
+    transition: 110ms;
+}
+.buttom:active{
+    box-shadow: 0px 0px 0px var(--calc8) !important;
+    top: 0px !important;
+    transition: 110ms;
+}
+
+/*Buttom efects*/
+.buttonN{
+    display: none;
+}
+.buttonBlue{
+     background-color: var(--calc11);
+     box-shadow: 0px 9px 0px var(--calc12);
+}
+.buttonBlack{
+     background-color: var(--calc3);
+     box-shadow: 0px 9px 0px var(--calc4);
+}
+.buttonRed{
+     background-color: var(--calc7);
+     box-shadow: 0px 9px 0px var(--calc8);
+}
+.buttonYellow{
+     background-color: var(--calc13);
+     box-shadow: 0px 9px 0px var(--calc14);
+}
+.buttonGreen{
+    background-color: var(--calc17);
+    box-shadow: 0px 9px 0px var(--calc18);
+}
+.buttonOrange{
+    background-color: var(--calc5);
+    box-shadow: 0px 9px 0px var(--calc6);
+}
+.buttonPurple{
+    background-color: var(--calc9);
+    box-shadow: 0px 9px 0px var(--calc10);
+}
+.buttonBlueBlack{
+    background-color: #1a4574;
+    box-shadow: 0px 9px 0px #0d243c;
+    user-select: none;
+    font-size: 1em;
+}
+.buttonBlueBlackLR{
+    background-color: #215c9a;
+    box-shadow: 0px 9px 0px #163c65;
+}
+/*Buttom efects*/
+
+/*Configuração de Icones SVG*/
+svg{
+    fill: white;
+    height: 30px;
+    filter:drop-shadow(0 0 4px rgb(170, 141, 40%));
+    user-select: none;
+   
+}
+.svgdicas{
+    margin-top: 3px;
+}
+.emote{
+    fill: var(--calc3);
+    height: 27px;
+}
+#buttonLevel{
+    font-size: 0.8em;
+    letter-spacing: 1.1px;
+}
+
+#buttonNumber{
+    font-size: 1.5em;
+    padding-bottom: 15px;
+}
+
+.dicas{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 17px;
+    padding-left: 4px;
+    position: absolute;
+    top: 3px;
+    font-size: 0.6em;
+}
