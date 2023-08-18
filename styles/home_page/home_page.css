@@ -162,24 +162,23 @@ span.redes svg{
     fill: white;
 }
 
-@media screen and (width: 412px){
+@media screen and (min-width: 390px) and (min-height: 750px){
     div#calulatorTxt{
         width: 100%;
         height: 250px;
     }
     div#calulatorTxt p{
-        font-size: 6em;
+        font-size: 5em;
         line-height: 90px;
     }
     div#calulatorTxt button{
-        width: 300px;
-        height: 70px;
-        margin-top: ;
+        width: 260px;
+        height: 60px;
     }
     div#calulatorTxt button a{
         width: 100%;
         height: 100%; 
-        font-size: 2.7em;
+        font-size: 2.4em;
     }
 
     div#imgCalculator{
@@ -188,9 +187,9 @@ span.redes svg{
         position: relative;
     }
     div#imgCalculator img{
-        width: 250px;
-        height: 250px;
-        margin-bottom: 50px;
+        width: 230px;
+        height: 230px;
+        margin-bottom: 35px;
     }
     div#imgCalculator p{
         position: absolute;
