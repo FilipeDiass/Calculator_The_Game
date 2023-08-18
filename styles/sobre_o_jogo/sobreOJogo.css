@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'texto';
+    src:url(../../fonts/Gotham/Gotham-Medium.otf);
+}
+@font-face {
+    font-family: 'game';
+    src:url(../../fonts/gameplay/Gameplay.ttf);
+}
+@font-face {
+    font-family: 'player';
+    src:url(../../fonts/players/Players.ttf);
+}
+@font-face {
+    font-family: 'bebas';
+    src:url(../../fonts/Bebas_nueue/BebasNeue-Regular.otf);
+}
+
+:root{
+    /*Cores do Site*/ 
+    --cor1: #68A694;
+    --cor2: #ABBF80;
+    --cor3: #F2D091;
+    --cor4: #F2B885;
+    --cor5: #BF613F;
+    /*Cores do Site*/
+
+    /*Fontes*/
+    --fontTxt: 'texto', Arial, Helvetica, sans-serif;
+    --fontGame: 'game', Arial, Helvetica, sans-serif;
+    --fontPlayer: 'Player', Arial, Helvetica, sans-serif;
+    --fontBebas: 'bebas', Arial, Helvetica, sans-serif;
+    /*Fontes*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontTxt);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor4);
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    padding: 20px 0px;
+}
+
+div.containerTxt{
+    width: 100%;
+}
+div.containerTxt h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+    margin: 10px 0px;
+    padding: 5px;
+    font-size: 1em;
+    font-family: var(--fontGame);
+    letter-spacing: 2px;
+    border-radius: 15px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.314);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.314);
+    color: white;
+    background-color: var(--cor2);
+}
+div.containerTxt p{
+    padding: 10px 0px;
+    font-size: 1em;
+    text-indent: 10px;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.314);
+}
+
+div.containerTxt ul{
+    width: 100%;
+    padding-left: 20px;
+}
+div.containerTxt ul li{
+    padding: 10px 0px;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: var(--cor1);
+}
+div#containerFooter{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+div#copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 35px;
+    padding-bottom: 5px;
+}
+div#copyright p{
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+}
+
+div#social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+}
+span.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    padding: 0px 5px;
+}
+span.redes svg{
+    height: 30px;
+    fill: white;
+}
