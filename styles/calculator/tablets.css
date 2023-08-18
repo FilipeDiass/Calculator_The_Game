@@ -1,5 +1,5 @@
 /*Media Para Tablets*/
-@media screen and (min-width: 700px) and (min-height: 840px){
+@media screen and (min-width: 700px) and (max-width: 950px) and (min-height: 840px){
     :root{
         --widthCalc: 170px;
         --heigthCalc: 300px;
@@ -16,9 +16,12 @@
         float: right;
     }
     #jogar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 150px;
         height: 50px;
-        font-size: 1.6em;
+        font-size: 1.3em;
         font-family: var(--fontGame);
         color: white;
         letter-spacing: 1.5px;
