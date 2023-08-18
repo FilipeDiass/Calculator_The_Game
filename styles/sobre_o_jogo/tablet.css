@@ -1,0 +1,47 @@
+@media screen and (min-width: 768px) and (max-width: 950px){
+
+    div#containerFooter{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 750px;
+        width: 85%;
+        height: 100%;
+        padding: 10px;
+    }
+    div#copyright{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+    }
+    div#copyright p{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.2em;
+        color: white;
+    }
+
+    div#social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        height: 100%;
+    }
+    span.redes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 100%;
+        padding: 0px 30px;
+    }
+    span.redes svg{
+        height: 40px;
+        fill: white;
+    }
+}
