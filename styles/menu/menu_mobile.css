@@ -57,13 +57,17 @@ header nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: calc(50% + 57.5px);
+    width: calc(50% + 75px);
     height: 100%;
     float: right;
 }
 #jogar{
-    width: 115px;
-    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    font-size: 1.3em;
     background-color: #BF613F;
     border-radius: 10px;
     border: none;
@@ -74,8 +78,8 @@ header nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 115px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
     font-size: 1.3em;
     font-family: var(--fontGame);
     color: white;

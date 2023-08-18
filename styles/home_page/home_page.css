@@ -97,6 +97,7 @@ div#calulatorTxt button a{
     height: 100%; 
     font-size: 1.5em;
     letter-spacing: 1px;
+    border-radius: 50px;
     font-family: var(--fontPlayer);
     color: white;
 }
