@@ -1,5 +1,5 @@
 @media screen and (min-width: 950px) and (min-height: 670px){
-
+   
     :root{    
         --widthCalc: 80px;
         --heigthCalc: 150px;
@@ -16,6 +16,7 @@
         width: 100%;
         height: 70px;
         background-color: var(--cor1);
+        user-select: none;
     }
     header nav{
         display: flex;
@@ -76,6 +77,9 @@
 
     }
 
+    a#tuto{
+        padding-left: 10px !important;
+    }
     #menu_nav li a{
         display: flex;
         align-items: center;
