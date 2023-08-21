@@ -107,17 +107,47 @@ div.containerTxt ul li{
 div#buttons{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
+div.containerButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    margin: 15px 0px;
+}
+span.buttonDescricao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 58px;
+    padding-left: 5px;
+}
+span.buttonDescricao p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:90%;
+    height: 50px;
+    text-align: center;
+    font-size: 0.9em;
+    text-indent: initial;
+    border-radius: 25px;
+    border: 1px solid black;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.449);
+    background-color: white;
+}
+
 div#buttons button{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 80px;
     height: 58px;
-    margin: 15px 0px;
     border: none;
     border-radius: 5px;
     color: white;
@@ -125,7 +155,6 @@ div#buttons button{
     cursor: pointer;
     user-select: none;
 }
-
 .buttonBlue{
     background-color: #24A19D;
     box-shadow: 0px 9px 0px #1A7673;
