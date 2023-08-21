@@ -20,6 +20,13 @@ function menuBurgue(event){
         if(window.innerWidth >= 950 && window.innerHeight >= 670) navbar.classList.remove('ativo')
     })
     //Monitorando o Tamanho da Tela
+
+    //Scroll Menu
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+    //Scroll Menu
 }
 
 burgue.addEventListener('click', menuBurgue);

@@ -135,7 +135,7 @@ nav.ativo #menu_burgue::before{
     z-index: 100;
 }
 nav.ativo #menu_nav{
-    height: calc(100vh - 70px);
+    height: calc(100vh - 69px);
     visibility: visible;
     overflow-y: auto;
 }
