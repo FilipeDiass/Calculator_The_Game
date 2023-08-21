@@ -124,7 +124,7 @@ nav.ativo #menu_burgue::before{
     width: 100%;
     height: 0px;
     position: absolute;
-    top: 70px;
+    top: 69px;
     left: 0;
     list-style: none;
     transition: 0.4s;
