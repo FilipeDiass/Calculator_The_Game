@@ -121,55 +121,6 @@ div#imgCalculator p{
     bottom: -15px;
 }
 
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 80px;
-    background-color: var(--cor1);
-}
-div#containerFooter{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-div#copyright{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    height: 35px;
-    padding-bottom: 5px;
-}
-div#copyright p{
-    text-align: center;
-    font-size: 0.8em;
-    color: white;
-}
-
-div#social{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 45px;
-}
-span.redes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 100%;
-    padding: 0px 5px;
-}
-span.redes svg{
-    height: 30px;
-    fill: white;
-}
-
 /*Telas Mobile maiores*/
 @media screen and (min-width: 390px) and (max-width: 768px) and (min-height: 750px){
     header nav {
