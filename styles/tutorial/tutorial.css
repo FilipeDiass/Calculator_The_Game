@@ -104,6 +104,49 @@ div.containerTxt ul li{
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.314);
 }
 
-div.containerTxt button{
-    
+div#buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+div#buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 58px;
+    margin: 15px 0px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.buttonBlue{
+    background-color: #24A19D;
+    box-shadow: 0px 9px 0px #1A7673;
+}
+.buttonBlack{
+    background-color: #454A4E;
+    box-shadow: 0px 9px 0px #31383E;
+}
+.buttonRed{
+    background-color: #C52D2C;
+    box-shadow: 0px 9px 0px #922423;
+}
+.buttonYellow{
+    background-color: #E1BB1C;
+    box-shadow: 0px 9px 0px #AE6F22;
+}
+.buttonOrange{
+   background-color: #FF8019;
+   box-shadow: 0px 9px 0px #B44900;
+}
+.buttonPurple{
+   background-color: #8A7BD8;
+   box-shadow: 0px 9px 0px #473A89;
 }
