@@ -119,6 +119,9 @@ div.containerButton{
     height: 80px;
     margin: 15px 0px;
 }
+.apagaSpan{
+    visibility: hidden;
+}
 span.buttonDescricao{
     display: flex;
     align-items: center;
@@ -135,9 +138,10 @@ span.buttonDescricao p{
     height: 50px;
     text-align: center;
     font-size: 0.9em;
+    color: #31383E;
     text-indent: initial;
-    border-radius: 25px;
-    border: 1px solid black;
+    border-radius: 10px;
+    border: 2px solid #31383E;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.449);
     background-color: white;
 }
@@ -178,4 +182,18 @@ div#buttons button{
 .buttonPurple{
    background-color: #8A7BD8;
    box-shadow: 0px 9px 0px #473A89;
+}
+
+.buttonAp{
+    position: relative;
+    top: 5px;
+    box-shadow: none !important;
+}
+
+svg{
+    fill: white;
+    height: 30px;
+    filter:drop-shadow(0 0 4px rgb(170, 141, 40%));
+    user-select: none;
+   
 }
