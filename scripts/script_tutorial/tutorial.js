@@ -11,11 +11,15 @@ buttonTuto.forEach((element, indice, array)=>{
         setTimeout(()=>{
             element.classList.remove('buttonAp')
             verifica = false
-        },140)
+        },110)
         //Fazendo a animação do botão
-
+    
         if(element === array[indice]){
-           spanTuto[indice].classList.toggle('apagaSpan')
+            if(!spanTuto[indice].classList.contains('apagaSpan')){
+                spanTuto[indice].classList.toggle('apagaSpan')
+            }else{
+                spanTuto[indice].classList.toggle('voltaSpan')
+            }    
         }
     }
 

@@ -120,7 +120,34 @@ div.containerButton{
     margin: 15px 0px;
 }
 .apagaSpan{
-    visibility: hidden;
+    opacity: 1;
+    animation-name: apagaSpan;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes apagaSpan{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.voltaSpan{
+    opacity: 0;
+    animation-name: voltaSpan;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes voltaSpan{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 span.buttonDescricao{
     display: flex;
@@ -128,8 +155,9 @@ span.buttonDescricao{
     justify-content: center;
     width: 80%;
     height: 58px;
-    padding-left: 5px;
+    padding-left: 5px;    
 }
+
 span.buttonDescricao p{
     display: flex;
     align-items: center;
