@@ -1,0 +1,84 @@
+@media screen and (min-width: 950px){
+    section#containerTuto{
+        max-width: 900px;
+        padding: 40px 0px;
+    }
+
+    div.containerTxt h1{
+        height: 50px;
+        font-size: 1.4em;
+    }
+
+    div.containerTxt p{
+        font-size: 1.2em;
+    }
+
+    div.containerTxt ul li{
+        padding: 10px 0px;
+        font-size: 1.2em;
+    }
+
+    div#buttons{
+        margin-bottom: 10px;
+    }
+    div.containerButton{
+        height: 90px;
+    }
+
+    span.buttonDescricao{
+        width: 80%;
+        height: 80px;
+    }
+
+    span.buttonDescricao p{
+        width:90%;
+        height: 50px;
+        font-size: 1.2em;
+        border: 2px solid #31383E;
+    }
+
+    div#buttons button{
+        width: 100px;
+        height: 70px;
+        border-radius: 5px;
+        font-size: 1.5em;
+    }
+    svg{
+        fill: white;
+        height: 35px;
+        filter:drop-shadow(0 0 4px rgb(170, 141, 40%));
+        user-select: none;
+    }
+
+    .buttonBlue{
+        background-color: #24A19D;
+        box-shadow: 0px 12px 0px #1A7673;
+    }
+    .buttonBlack{
+        background-color: #454A4E;
+        box-shadow: 0px 12px 0px #31383E;
+    }
+    .buttonRed{
+        background-color: #C52D2C;
+        box-shadow: 0px 12px 0px #922423;
+    }
+    .buttonYellow{
+        background-color: #E1BB1C;
+        box-shadow: 0px 12px 0px #AE6F22;
+    }
+    .buttonOrange{
+       background-color: #FF8019;
+       box-shadow: 0px 12px 0px #B44900;
+    }
+    .buttonPurple{
+       background-color: #8A7BD8;
+       box-shadow: 0px 12px 0px #473A89;
+    }
+
+    .buttonAp{
+        position: relative;
+        top: 7px;
+        box-shadow: none !important;
+    }
+    
+}
