@@ -155,6 +155,7 @@ nav.ativo #menu_nav{
     letter-spacing: 2px;
     font-size: 1.4em;
     font-family: var(--fontGame);
+    cursor: pointer;
 }
 #menu_nav li a:hover{
     background-color: #abbf8063;
