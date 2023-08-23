@@ -5,6 +5,7 @@ function meuContato(event){
     if(event.type === 'touch' || event.pointerType === Touch) event.preventDefault();
     const container = document.querySelector('#contatos')
     const navbar = document.querySelector('#navbar')
+    const body = document.querySelector('body')
 
     if(container.style.display === 'none'){
         container.style.display = 'flex'
@@ -16,6 +17,7 @@ function meuContato(event){
         } 
     }else{
         container.style.display = 'none'
+        body.style.overflow = 'auto'
     }
     
 }

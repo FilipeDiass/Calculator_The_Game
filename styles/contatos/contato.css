@@ -8,7 +8,8 @@ section#contatos{
     top: 0;
     z-index: 200;
 }
-section#contatos > div{
+section#contatos > #blocoContato{
+    display: block;
     min-width: 250px;
     max-width: 380px;
     width: 80%;
@@ -26,10 +27,15 @@ section#contatos > div{
     width: 50px;
     height: 40px;
     float: right;
+    fill: white;
     cursor: pointer;
 }
+#fechar svg{
+    width: 30px;
+    height: 30px;
+}
 
-h1{
+#blocoContato h1{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,6 +63,13 @@ div#minhasRede span{
     padding: 15px;
     
 }
+
+div#minhasRede span svg{
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
 
 .buttonCont{
     width: 50%;
