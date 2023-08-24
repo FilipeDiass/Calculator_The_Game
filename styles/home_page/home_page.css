@@ -38,13 +38,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--fontTxt);
 }
 
 body,html{
     width: 100%;
     height: calc(100vh - 150px);
     background-color: var(--cor3);
+    font-family: var(--fontTxt);
 }
 
 main{

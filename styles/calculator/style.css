@@ -27,13 +27,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--fontTxt);
+    
 }
 
 body,html{
     width: 100%;
     height: calc(100vh - 70px);
     background-color: var(--cor2);
+    font-family: var(--fontTxt);
 }
 
 /*Configuração*padrão dos links*/

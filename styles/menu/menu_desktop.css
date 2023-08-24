@@ -7,6 +7,7 @@
         --heigth: 60px;
     }
 
+
     /*Menu NavBar*/
     #jogar, #menu_burgue{
         display: none;
@@ -32,7 +33,7 @@
     #logoDesktop a{
         width: 130px !important;
         height: 70% !important;
-        font-size: 1.5em !important;
+        font-size: 1.4em !important;
         border-radius: 10px;
         background-color: #BF613F;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 40%);
@@ -41,7 +42,7 @@
     #logoDesktop a:hover{
         width: 140px !important;
         height: 80% !important;
-        font-size: 1.6em !important;
+        font-size: 1.5em !important;
         color: #454A4E !important;
         background-color: white !important;
         transition: .4s !important;
@@ -71,7 +72,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 180px;
+        width: 220px;
         height: 100%;
         padding: 0px;
 
@@ -84,7 +85,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 180px;
+        width: 220px;
         height: 100%;
         letter-spacing: 2px;
         text-shadow: 0px 0px 5px rgba(0, 0, 0, 20%);
