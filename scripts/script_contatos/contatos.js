@@ -1,6 +1,21 @@
 const fechar = document.querySelector('#fechar')
 const abrir = document.querySelector('#abrirCont')
+const section = document.querySelector('#contatos')
+const div = document.querySelector('#blocoContato')
 let key = 1
+
+//Evita fechar caso eu clique na parte azul
+div.addEventListener('click', fecharFora)
+div.addEventListener('touchstart', fecharFora)
+
+function fecharFora(event){
+    if(event.type === 'touchstart' || event.pointerType === 'touch'){
+        event.preventDefault();
+    } 
+    event.stopPropagation()
+    console.log('fefef')
+}
+//Evita fechar caso eu clique na parte azul
 
 function meuContato(event){
     if(event.type === 'touchstart' || event.pointerType === Touch){
@@ -9,7 +24,8 @@ function meuContato(event){
     const container = document.querySelector('#contatos')
     const navbar = document.querySelector('#navbar')
     const body = document.querySelector('body')
-    
+    event.stopPropagation()
+
     if(key === 1){
         container.style.display = 'none'
     }
@@ -34,3 +50,5 @@ fechar.addEventListener('click', meuContato)
 fechar.addEventListener('touchstart', meuContato)
 abrir.addEventListener('click', meuContato)
 abrir.addEventListener('touchstart', meuContato)
+section.addEventListener('click', meuContato)
+section.addEventListener('touchstart', meuContato)
